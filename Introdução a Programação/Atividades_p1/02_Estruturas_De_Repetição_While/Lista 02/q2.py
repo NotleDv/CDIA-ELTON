@@ -6,8 +6,10 @@ soma = valor
 
 while (valor != -1):
     valor = float(input("Digite um valor: "))
+    if valor == -1:
+        break
     
-    if valor > maior:
+    elif valor > maior:
         maior = valor
         
     elif valor < menor:
